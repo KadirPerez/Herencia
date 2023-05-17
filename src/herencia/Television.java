@@ -12,7 +12,8 @@ public class Television extends DispositivoElectronicoDeConsumo
         agregarComponente(pantalla);
     }
     
-    public Television(String fab, String numSerie, String marca, String nombre, String fabP, String numSerieP, String marcaP, String nombreP, int x, int y){
+    public Television(String fab, String numSerie, String marca, String nombre, 
+            String fabP, String numSerieP, String marcaP, String nombreP, int x, int y){
         super(fab, numSerie, marca, nombre);
         pantalla = new Pantalla(fabP, numSerieP, marcaP, nombreP, x, y);
         agregarComponente(pantalla);

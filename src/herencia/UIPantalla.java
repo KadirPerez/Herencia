@@ -7,7 +7,7 @@ import java.awt.image.ImageObserver;
 import java.io.File;
 import javax.imageio.ImageIO;
 
-public class UIPantalla extends java.awt.Panel {
+public class UIPantalla {
 
    private BufferedImage image;
    private Pantalla pantalla;
@@ -21,18 +21,7 @@ public class UIPantalla extends java.awt.Panel {
         this.pantalla = pantalla;
    }
 
-   public void paint(Graphics g) {
-  	g.drawImage(image, 10, 10, 300, 300, this);
-   }
-
-   public static void main(String[] args) {
-    	UIPantalla panel = new UIPantalla("src/herencia/Pantalla.jpg", new Pantalla("", "", "", "", 0, 0));
-  	MiMouseAdapter mouse = new MiMouseAdapter();
-        panel.addMouseListener(mouse);
-        Frame frame = new Frame();
-        frame.add(panel);
-        frame.setSize(500, 500);
-        frame.setBackground(Color.WHITE);
-        frame.setVisible(true);
-   }
+   public BufferedImage getImagen(){
+        return image;
+    }
 }

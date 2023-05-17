@@ -2,7 +2,6 @@ package herencia;
 
 import java.util.ArrayList;
 
-
 public class Microprocesador extends ComponenteElectronico
 {
     private final int cacheRAM;
@@ -28,6 +27,7 @@ public class Microprocesador extends ComponenteElectronico
         return velocidadHz;
     }
     
+    @Override
     public String toString(){
         return "\n\n    Microprocesador\n\n      Fabricante: " + getFabricante()+ 
                "\n      Numero de serie: " + getNumeroSerie() + 
