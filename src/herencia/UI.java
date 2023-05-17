@@ -25,12 +25,14 @@ public class UI extends Panel{
      
     @Override
     public void paint(Graphics g) {
-        g.drawImage(UIC.getImagen(), 0, 0, 300, 300, this);
-        g.drawImage(UIM.getImagen(), 0, 0, 300, 300, this);
-        g.drawImage(UIP.getImagen(), 0, 0, 300, 300, this);
-        g.drawImage(UIS.getImagen(), 0, 0, 300, 300, this);
-        g.drawImage(UISP.getImagen(), 0, 0, 300, 300, this);
-        g.drawImage(UIT.getImagen(), 0, 0, 300, 300, this);
+        g.drawImage(UIC.getImagen(), 0, 110, 100, 100, this);
+        g.drawImage(UISP.getImagen(), 110, 110, 100, 100, this);
+        g.drawImage(UIT.getImagen(), 220, 110, 100, 100, this);
+        
+        g.drawImage(UIM.getImagen(), 0, 220, 100, 100, this);
+        g.drawImage(UIP.getImagen(), 110, 220, 100, 100, this);
+        g.drawImage(UIS.getImagen(), 220, 220, 100, 100, this);
+        
     }
     
      public static void main(String[] args) {
@@ -46,7 +48,7 @@ public class UI extends Panel{
         panel.addMouseListener(mouse);
         Frame frame = new Frame();
         frame.add(panel);
-        frame.setSize(980, 980);
+        frame.setSize(320, 320);
         frame.setBackground(Color.WHITE);
         frame.setVisible(true);
     }
